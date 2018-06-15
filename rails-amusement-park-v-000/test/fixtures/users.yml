@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  password_digest: MyString
+  happiness: 1
+  tickets: 1
+  height: 1
+  nausea: 1
+  admin: false
+
+two:
+  name: MyString
+  password_digest: MyString
+  happiness: 1
+  tickets: 1
+  height: 1
+  nausea: 1
+  admin: false

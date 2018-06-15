@@ -1,0 +1,12 @@
+tags:
+  - index
+  - create
+  - forms
+  - params
+  - form_tag
+  - redirects
+languages:
+  - ruby
+type: 
+  - lab
+resources: 2

@@ -1,0 +1,11 @@
+<h1>Frogs</h1>
+<p><a href="/frogs/new" class="btn btn-primary">Create a new frog</a></p>
+
+<% @frogs.each do |frog| %>
+  <div class="card">
+    <a href="/frogs/<%= frog.id %>">
+      <img src="http://<%= frog.color %>-frog.jpg.to/" alt="Frog Picture" height="115" width="175">
+    </a>
+    <p><a href="/frogs/<%= frog.id %>"><%= frog.name %></a></p>
+  </div>
+<% end %>

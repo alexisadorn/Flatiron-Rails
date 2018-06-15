@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pollywog Ranch</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+  <%= analytics_init if Rails.env.production? %>
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Pollywog Ranch</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/ponds">Ponds</a></li>
+          <li><a href="/frogs">Frogs</a></li>
+          <li><a href="/tadpoles">Tadpoles</a></li>
+        </ul>
+      </div><!-- nav-collapse -->
+    </div>
+  </div><!-- navbar -->
+
+  <div class="container">
+    <%= yield %>
+  </div>
+
+</body>
+</html>

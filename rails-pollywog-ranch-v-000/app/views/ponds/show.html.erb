@@ -1,0 +1,23 @@
+<div class="card">
+  <h1><%= @pond.name %> Pond</h1>
+  <p>water type: <%= @pond.water_type %></p>
+  <p>Resident frogs and their tadpoles:</p>
+  <ol>
+    <% @pond.frogs.each do |frog| %>
+      <li><a href="/frogs/<%= frog.id %>"><%= frog.name %> frog</a>
+        <ol>
+          <% frog.tadpoles.each do |tadpole| %>
+            <li><a href="/tadpoles/<%= tadpole.id %>"><%= tadpole.name %> tadpole</a></li>
+          <% end %>
+        </ol>
+      </li>
+    <% end %>
+  </ol>
+  <a href="/ponds">Back</a> | 
+  <a href="/ponds/<%= @pond.id %>/edit">Edit</a> | 
+  <a href="/ponds/<%= @pond.id %>/destroy">Delete</a>
+</div>
+
+<div class="card">
+  <img src="http://<%= @pond.name %>-pond.jpg.to/" alt="Pond Picture" height="300">
+</div>

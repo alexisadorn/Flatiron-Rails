@@ -1,0 +1,11 @@
+tags:
+  - url helpers
+  - routing
+  - rake routes
+  - routing conventions
+  - custom routes
+languages:
+  - ruby
+type: 
+  - readme
+resources: 2

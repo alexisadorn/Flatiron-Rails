@@ -1,0 +1,8 @@
+tags:
+  - session
+  - before_filter
+  - login
+languages:
+  - Ruby
+resources:
+  - http://guides.rubyonrails.org/action_controller_overview.html#filters

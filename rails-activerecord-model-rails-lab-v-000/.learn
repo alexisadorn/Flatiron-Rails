@@ -1,0 +1,10 @@
+tags:
+  - ActiveRecord
+  - RSpec
+  - database
+  - creating tables
+languages:
+  - ruby
+type: 
+  - lab
+resources: 2

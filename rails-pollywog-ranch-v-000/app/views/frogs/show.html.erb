@@ -1,0 +1,29 @@
+<% if flash[:notice] %>
+  <div class="notice">
+    <%= flash[:notice] %></p>
+  </div>
+<% end %>
+
+<div class="card">
+  <h1><%= @frog.name %> the Frog</h1>
+
+  <p><a href="/frogs/<%= @frog.id %>/tadpoles/new" class="btn btn-primary">Create new tadpole baby</a></p>
+
+  <p>Color: <%= @frog.color %></p>
+  <p>Lives: <a href="/ponds/<%= @frog.pond.id %>"><%= @frog.pond.name %></a></p>
+  <% unless @frog.tadpoles.empty? %>
+    <h2>Children</h2>
+    <ol>
+      <% @frog.tadpoles.each do |tadpole| %>
+        <li><a href="/tadpoles/<%= tadpole.id %>"><%= tadpole.name %></a></li>
+      <% end %>
+    </ol><br>
+  <% end %>
+  <a href="/frogs">Back</a> | 
+  <a href="/frogs/<%= @frog.id %>/edit">Edit</a> | 
+  <a href="/frogs/<%= @frog.id %>/destroy">Delete</a>
+</div>
+
+<div class="card">
+  <img src="http://<%= @frog.color %>-frog.jpg.to/" alt="Frog Picture" width="350">
+</div>

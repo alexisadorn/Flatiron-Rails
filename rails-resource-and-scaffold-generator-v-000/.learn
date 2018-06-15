@@ -1,0 +1,9 @@
+tags:
+  - generators
+  - scaffolds
+  - resources
+languages:
+  - ruby
+type: 
+  - readme
+resources: 1

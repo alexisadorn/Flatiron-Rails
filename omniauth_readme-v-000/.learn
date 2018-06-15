@@ -1,0 +1,7 @@
+tags:
+  - omniauth
+  - oauth
+languages:
+  - Ruby
+resources:
+  - https://github.com/intridea/omniauth

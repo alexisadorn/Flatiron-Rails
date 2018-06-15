@@ -1,0 +1,3 @@
+<h1><%= @post.title %></h1>
+<p>by <%= link_to @post.author.name, author_path(@post.author) if @post.author %> (<%= link_to "Edit Post", edit_author_post_path(@post.author, @post) if @post.author %>)</p>
+<p><%= @post.description %> </p>

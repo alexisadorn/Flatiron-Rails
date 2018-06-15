@@ -1,0 +1,17 @@
+<%= form_for(@tadpole) do |f| %>
+
+  <div class="field"> <%= f.label :name %><br>
+  <%= f.text_field :name %></div>
+
+  <div class="field"><%= f.label :color %><br>
+  <%= f.text_field :color %></div>
+
+  <div class="field">
+    <%= f.hidden_field :frog_id, :value => @frog.id %>
+  </div>
+
+  <br>
+  
+  <div class="actions"><%= f.submit 'Submit', :class => 'btn btn-primary' %></div>
+
+<% end %>

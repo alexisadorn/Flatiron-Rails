@@ -1,0 +1,8 @@
+tags:
+  - nested forms
+  - nested params
+  - attributes=
+  - accepts_nested_attributes_for
+languages:
+  - ruby
+resources: 0

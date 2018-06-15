@@ -1,0 +1,11 @@
+default: &default
+  adapter: sqlite3
+  encoding: unicode
+
+development:
+  <<: *default
+  database: db/activerecord-validations-lab_development.sqlite3
+
+test:
+  <<: *default
+  database: db/activerecord-validations-lab_test.sqlite3

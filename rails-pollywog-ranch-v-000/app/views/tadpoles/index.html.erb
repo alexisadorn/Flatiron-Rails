@@ -1,0 +1,9 @@
+<h1>Tadpoles</h1>
+<% @tadpoles.each do |tadpole| %>
+  <div class="card">
+    <a href="/tadpoles/<%= tadpole.id %>">
+      <img src="http://<%= tadpole.color %>-tadpole.jpg.to/" alt="Tadpole Picture" height="115" width="175">
+    </a>
+    <p><a href="/tadpoles/<%= tadpole.id %>"><%= tadpole.name %></a></p>
+  </div>
+<% end %>

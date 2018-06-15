@@ -1,0 +1,6 @@
+<ul>
+<% attractions.each do |attraction| %>
+  <li><%= link_to "Show #{attraction.name}", attraction_path(attraction) %></li>
+<% end %>
+</ul>
+<%= link_to "New Attraction", new_attraction_path %>

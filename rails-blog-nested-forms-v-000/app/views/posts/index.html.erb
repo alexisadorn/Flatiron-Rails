@@ -1,0 +1,10 @@
+<h1>Listing posts</h1>
+
+    <% @posts.each do |post| %>
+        <h2><%= link_to post.name, post %></h2>
+        <p><%= link_to 'Edit', edit_post_path(post) %></p>
+        <p><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    <% end %>
+
+<br>
+<%= link_to 'New Post', new_post_path %>

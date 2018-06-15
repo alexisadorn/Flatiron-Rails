@@ -1,0 +1,11 @@
+tags:
+  - dynamic routes
+  - controllers
+  - rspec
+  - capybara
+  - mvc
+languages:
+  - ruby
+type: 
+  - lab
+resources: 2

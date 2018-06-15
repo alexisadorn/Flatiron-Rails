@@ -1,0 +1,8 @@
+languages:
+  - ruby
+tags:
+  - rails
+  - activerecord
+  - associations
+  - models
+resources: 4

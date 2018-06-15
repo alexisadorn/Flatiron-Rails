@@ -1,0 +1,13 @@
+<h1>Ponds</h1>
+<p><a href="/ponds/new" class="btn btn-primary">Create a new pond</a></p>
+
+<div class="card-container">
+  <% @ponds.each do |pond| %>
+    <div class="card pond-card">
+      <a href="/ponds/<%= pond.id %>">
+        <img src="http://<%= pond.name %>-pond.jpg.to/" alt="Pond Picture" height="200" width="300">  
+      </a>
+      <p><a href="/ponds/<%= pond.id %>"><%= pond.name %></a></p>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  tickets: 1
+  nausea_rating: 1
+  happiness_rating: 1
+  min_weight: 1
+
+two:
+  name: MyString
+  tickets: 1
+  nausea_rating: 1
+  happiness_rating: 1
+  min_weight: 1
